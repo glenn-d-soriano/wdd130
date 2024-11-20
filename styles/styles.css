@@ -1,68 +1,75 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
-  }
-  
-  
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-  }
-  
-  
-h1 {
-    color: darkblue;
-  }
-  
-  
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-  }
-  
-  
-p {
-    padding: 10px;
-  }
+:root {
+  --main-bg-color: darkblue;
+  --main-text-color: white;
+  --header-padding: 10px;
+  --link-padding: 20px;
+  --highlight-color: #333;
+  --border-style: 1px solid black;
+  --box-shadow: 0 0 30px gray;
+  --aside-bg-color: #eee;
+  --aside-padding: 1rem;
+  --aside-border: 1px solid rgba(0, 0, 0, 0.2);
+  --footer-border: 1px solid #000;
+  --main-width: 840px;
+}
 
-  
-  main {
-    max-width: 840px;
-  }  
- 
+header {
+  border: var(--border-style);
+}
+
+nav {
+  background-color: var(--main-bg-color);
+  padding: var(--header-padding);
+}
+
+nav a {
+  color: var(--main-text-color);
+  display: block;
+  padding: var(--link-padding);
+}
+
+h1 {
+  color: var(--main-bg-color);
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: var(--border-style);
+  padding: 2px;
+  box-shadow: var(--box-shadow);
+}
+
+p {
+  padding: 10px; /* You can replace this with a variable if needed */
+}
+
+main {
+  max-width: var(--main-width);
+}
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }  
+  width: 20rem;
+  margin: 1rem;
+  border: var(--aside-border);
+  padding: var(--aside-padding);
+  background-color: var(--aside-bg-color);
+  color: var(--highlight-color);
+  text-align: center;
+}
 
 aside img {
-    width: 200px;
-    height: auto;
-  }  
-
+  width: 200px;
+  height: auto;
+}
 
 main img {
-    width: 150px;
-    height: auto;
-    
-    }
-
-p { padding: 0;}
-
-
+  width: 150px;
+  height: auto;
+}
 
 footer {
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: var(--footer-border);
   text-align: center;
 }
