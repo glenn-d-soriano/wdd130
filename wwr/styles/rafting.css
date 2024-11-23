@@ -68,7 +68,7 @@ img {
 
 /* Style for the footer */
 footer {
-    background-color: var(--accent-color-light);
+    background-color: var(--primary-color);
     color: var(--light-color);
     padding: 20px;
     text-align: center;
@@ -81,6 +81,7 @@ footer {
 }
 
 .sociallinks a img {
+    
     width: 32px;
     height: 32px;
 }
@@ -88,6 +89,7 @@ footer {
 /* Hover effect for social media links */
 .sociallinks a:hover img {
     opacity: 0.7;
+    
 }
 
 /* Navigation links */
