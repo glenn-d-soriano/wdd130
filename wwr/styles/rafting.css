@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Define the color scheme using CSS variables */
 :root {
     --primary-color: #616042;  /* Ebony */
@@ -22,6 +28,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* Set the maximum width of the page and center the content */
@@ -30,7 +37,47 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+/* Header styles using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo in one column, navigation in the other */
+    align-items: center; /* Center content vertically */
+    column-gap: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
 
+/* Logo styling */
+.logo-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Navigation bar styles using Flexbox */
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align navigation links to the right */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Space between items */
+}
+
+/* Navigation links */
+nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
 /* Style the headings */
 h1, h2 {
     font-family: 'Oswald', sans-serif;
@@ -66,6 +113,28 @@ img {
     border-radius: 8px;
 }
 
+/* History Section */
+section {
+    margin: 40px 20px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 20px;
+}
+
+.history img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.history p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #333;
+}
 /* Style for the footer */
 footer {
     background-color: var(--primary-color);
@@ -74,6 +143,17 @@ footer {
     text-align: center;
 }
 
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer nav a img {
+    width: 24px;
+    height: 24px;
+}
 /* Social media links - remove underline */
 .sociallinks a {
     text-decoration: none;
@@ -113,6 +193,16 @@ nav a:hover {
     overflow: hidden;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 0;
+}
 /* Hero image setup */
 .hero img {
     display: block;
@@ -211,4 +301,31 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--link-hover-color);
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; /* Stack logo and nav vertically */
+        text-align: center;
+    }
+    nav ul {
+        justify-content: center; /* Center links for smaller screens */
+    }
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.adventure figure {
+    margin: 0;
+}
+
+.adventure figcaption {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--dark-color);
 }
