@@ -105,8 +105,7 @@ img {
 
 .history {
     margin: 40px 20px;
-    text-align: center; /* Center the heading */
-    width: 100%;        /* Ensure full width */
+    text-align: center;  /* Keep the heading centered */
 }
 
 .history h2 {
@@ -120,62 +119,66 @@ img {
 /* Style for the history image */
 .history figure {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    flex: 0 1 300px;  /* Allow the image to take up more space (e.g., 300px width) */
+    max-width: 350px; /* Limit the image's maximum width */
+    flex-shrink: 0; /* Prevent image from shrinking */
+    height: 100%;  /* Ensure image takes the full height of the container */
 }
 
+/* Create a flex container to hold the image and paragraphs */
 .history-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
     display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
+    justify-content: space-between;  /* Distribute the space evenly */
+    align-items: stretch;  /* Make image and paragraphs equal height */
+    gap: 20px;  /* Add space between elements */
+    flex-wrap: nowrap;  /* Ensure everything stays in one row */
+    max-width: 1200px;  /* Limit width of container */
+    margin: 0 auto;  /* Center the content */
+    padding: 20px;
+    border: 2px solid var(--primary-color);  /* Add border for box-like effect */
+    border-radius: 10px;  /* Rounded corners for the "box" */
+    background-color: var(--accent-color-light);  /* Light background */
 }
+
 
 .history img {
-    max-width: 80%; /* Image width (adjust as necessary) */
-    height: auto;
-    border-radius: 8px;
+    width: 100%;  /* Make the image take up the full width of its container */
+    height: 100%;  /* Ensure image fills the height of the container */
+    object-fit: cover;  /* Maintain aspect ratio while filling container */
+    border-radius: 8px;  /* Optional: add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Light shadow around the image */
 }
 
 .history p {
+    flex: 1;  /* Allow the paragraph to grow and fill available space */
+    max-width: 45%;  /* Limit the width of the paragraphs */
     font-size: 1.125rem;
     line-height: 1.6;
     color: var(--text-color);
-    text-align: justify; /* Ensure text is justified around the image */
     margin: 0;
-    padding: 0;
-    max-width: 700px;
+    padding: 10px;  /* Add some padding to make text less cramped */
+    background-color: var(--light-color);  /* Light background for paragraphs */
+    border-radius: 8px;  /* Rounded corners for paragraphs */
+    height: 100%;  /* Ensure paragraphs take the full height of the container */
 }
 
-/* Ensuring the wrapping effect */
-.history-content p {
-    display: flex;
-    flex-wrap: wrap; /* Allow content to wrap */
-    justify-content: center; /* Center everything */
-    align-items: flex-start; /* Align items to the top */
-    gap: 20px; /* Space between elements */
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Additional styling to ensure the container and elements are centered */
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr; /* Three columns: left, image in the center, right */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: flex-start; /* Align to top */
-    padding: 20px;
-}
-
-/* Optional: For better control on smaller screens */
+/* Make the layout responsive */
 @media (max-width: 768px) {
-    .history img {
-        max-width: 100%; /* Image takes full width on small screens */
-        float: none; /* Remove float */
-        margin: 0; /* Remove margins for small screens */
+    .history-content {
+        flex-direction: column;  /* Stack the image and paragraphs vertically on small screens */
+        text-align: center;  /* Center everything */
+    }
+
+    .history-content p {
+        max-width: 100%;  /* Allow paragraphs to take full width */
+        margin-bottom: 20px;  /* Add space between paragraphs */
+    }
+
+    .history-content img {
+        width: 100%;  /* Make the image responsive */
+        max-width: 300px;  /* Limit the image size */
+        margin-bottom: 20px;  /* Add margin to separate from paragraphs */
     }
 }
 
