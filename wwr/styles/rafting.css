@@ -6,9 +6,9 @@
 
 /* Define the color scheme using CSS variables */
 :root {
-    --primary-color: #616042;  /* Ebony */
+    --primary-color: #a09c9c;  /* Ebony */
     --secondary-color: #25181F; /* Licorice */
-    --accent-color-light: #DAE7DA;  /* Honeydew */
+    --accent-color-light: #c6c6c6;  /* Honeydew */
     --accent-color-dark: #858585;   /* Bttleship Gray */
     --light-color: #ffffff;         /* White for backgrounds */
     --text-color: #333333;          /* Dark gray text for better readability */
@@ -35,15 +35,19 @@ main {
 }
 /* Header styles using CSS Grid */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logo in one column, navigation in the other */
+    display: flex;
     align-items: center; /* Center content vertically */
     column-gap: 20px;
     padding: 10px 20px;
     background-color: var(--primary-color);
 }
+header div {
+    margin: 0 30px;
+}
 
-
+header nav {
+    width: 100%;
+}
 /* Navigation bar styles using Flexbox */
 nav ul {
     display: flex;
@@ -66,6 +70,7 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--link-hover-color);
 }
+
 /* Style the headings */
 h1, h2 {
     font-family: 'Oswald', sans-serif;
@@ -143,7 +148,7 @@ img {
 
 
 .history img {
-    width: 100%;  /* Make the image take up the full width of its container */
+    
     height: 100%;  /* Ensure image fills the height of the container */
     object-fit: cover;  /* Maintain aspect ratio while filling container */
     border-radius: 8px;  /* Optional: add rounded corners to the image */
@@ -283,6 +288,7 @@ footer nav a img {
 
 /* Style for the image inside the article */
 .hero article img {
+    position: static;
     margin-left: auto;
     width: 200px;
     height: auto;
@@ -294,10 +300,10 @@ footer nav a img {
     font-size: 1.125rem;
     line-height: 1.6;
     color: var(--light-color);
-    margin: 0;
-    padding-right: 170px; /* Ensure the paragraph doesn't get hidden behind the image */
+    margin-right: 10px;
     flex-grow: 1;
     text-align: center;
+    margin-bottom: 0;
 }
 
 
