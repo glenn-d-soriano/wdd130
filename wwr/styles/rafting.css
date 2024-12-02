@@ -8,14 +8,14 @@ old color code
 
 /* Define the color scheme using CSS variables */
 :root {
-    --primary-color: #004f63;  /* Deep teal for headers and primary accents */
-    --secondary-color: #0b3c47; /* Darker teal for strong emphasis elements */
-    --accent-color-light: #e4f1f6;  /* Light sky blue for backgrounds */
-    --accent-color-dark: #5d7f89;   /* Muted blue-gray for borders and accents */
+    --primary-color: #def6fa;  /* Deep teal for headers and primary accents */
+    --secondary-color: #002933; /* Darker teal for strong emphasis elements */
+    --accent-color-light: #78888c;  /* Light sky blue for backgrounds */
+    --accent-color-dark: #4a6871;   /* Muted blue-gray for borders and accents */
     --light-color: #ffffff;         /* White for backgrounds */
-    --text-color: #1b1b1b;          /* Very dark gray for main readable text */
-    --link-hover-color: #006d7e;    /* Brighter teal for hover effects on links */
-    --dark-color: #0b3c47;          /* Dark teal for footers and headings */
+    --text-color: #1a1a1a;          /* Very dark gray for main readable text */
+    --link-hover-color: #008080;    /* Brighter teal for hover effects on links */
+    --dark-color: #002933;          /* Dark teal for footers and headings */
 }
 
 
@@ -389,7 +389,7 @@ nav ul li a:hover {
 .adventure figcaption {
     margin-top: 8px;
     font-size: 1rem;
-    color: var(--dark-color);
+    color: var(--text-color);
     text-align: center;
 }
 
