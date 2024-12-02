@@ -1,3 +1,5 @@
+old color code
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +8,14 @@
 
 /* Define the color scheme using CSS variables */
 :root {
-    --primary-color: #a09c9c;  /* Ebony */
-    --secondary-color: #25181F; /* Licorice */
-    --accent-color-light: #c6c6c6;  /* Honeydew */
-    --accent-color-dark: #858585;   /* Bttleship Gray */
+    --primary-color: #004f63;  /* Deep teal for headers and primary accents */
+    --secondary-color: #0b3c47; /* Darker teal for strong emphasis elements */
+    --accent-color-light: #e4f1f6;  /* Light sky blue for backgrounds */
+    --accent-color-dark: #5d7f89;   /* Muted blue-gray for borders and accents */
     --light-color: #ffffff;         /* White for backgrounds */
-    --text-color: #333333;          /* Dark gray text for better readability */
-    --link-hover-color: #48C9B0;    /* Light teal for hover effect on links */
-    --dark-color: #25181F;          /* Dark brownish color for footer and headings */
+    --text-color: #1b1b1b;          /* Very dark gray for main readable text */
+    --link-hover-color: #006d7e;    /* Brighter teal for hover effects on links */
+    --dark-color: #0b3c47;          /* Dark teal for footers and headings */
 }
 
 
@@ -275,7 +277,7 @@ footer nav a img {
     left: 20px;
     background-color: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
     color: var(--light-color);
-    padding: 20px;
+    padding: 100px;
     width: 100%;
     max-width: 700px;
     border-radius: 8px;
@@ -416,4 +418,5 @@ nav ul li a:hover {
         grid-template-columns: 1fr;  /* Single column on very small screens */
     }
 }
+
 
