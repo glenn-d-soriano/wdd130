@@ -37,12 +37,16 @@ main {
 }
 /* Header styles using CSS Grid */
 header {
-    display: flex;
-    align-items: center; /* Center content vertically */
-    column-gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto; /* Logo in the first column, nav in the second */
+    align-items: center; /* Vertically center the content */
+    justify-items: center; /* Space out logo and nav */
     padding: 10px 20px;
     background-color: var(--primary-color);
+    column-gap: 20px; /* Space between logo and navigation */
 }
+
+    
 header div {
     margin: 0 30px;
 }
@@ -73,6 +77,23 @@ nav ul li a:hover {
     color: var(--link-hover-color);
 }
 
+/* Style for the logo image */
+header .logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure the logo and nav align evenly */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; /* Stack the logo and nav on top of each other on small screens */
+        text-align: center; /* Center text */
+    }
+
+    nav ul {
+        justify-content: center; /* Center the nav links */
+    }
+}
 /* Style the headings */
 h1, h2 {
     font-family: 'Oswald', sans-serif;
