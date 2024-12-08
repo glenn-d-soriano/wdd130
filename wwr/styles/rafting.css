@@ -478,7 +478,7 @@ nav ul li a:hover {
   }
   
   button {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -567,7 +567,7 @@ input[type="checkbox"] {
     margin-top: 1rem;
 }
 button[type="submit"] {
-    background-color: #007BFF;
+    background-color: #332d2dc7;
     color: white;
     padding: 1rem 2rem;
     border: none;
