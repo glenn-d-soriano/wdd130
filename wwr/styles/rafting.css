@@ -443,11 +443,14 @@ nav ul li a:hover {
 
 /* Contact Form Styling */
 .contact-form {
-    margin: 2rem 0;
-    padding: 1.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
     background-color: #f4f4f4;
     border-radius: 8px;
-  }
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
   
   .contact-form h2 {
     font-size: 1.8rem;
@@ -546,6 +549,19 @@ textarea {
 }
 input[type="radio"] {
     margin-right: 10px;
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}    
+
+.radio-options {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.radio-options li {
+    margin-bottom: 10px;
+}    
 }
 .checkbox-container {
     margin-top: 1rem;
