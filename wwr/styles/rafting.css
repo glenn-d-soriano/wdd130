@@ -489,3 +489,7 @@ nav ul li a:hover {
     background-color: #0056b3;
   }
   
+  .google-map {
+    border: 0;
+}
+  
