@@ -68,10 +68,39 @@
                 <input type="email" id="email" name="email" required>
               </div>
               <div class="form-item">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-              </div>
-              <button type="submit">Send Your Message</button>
+                <label>Purpose of the Message:</label>
+                <div>
+                    <label for="general-inquiry">
+                        <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required> General Inquiry
+                    </label>
+                </div>
+                <div>
+                    <label for="reservation-question">
+                        <input type="radio" id="reservation-question" name="purpose" value="Reservation Question" required> Reservation Question
+                    </label>
+                </div>
+                <div>
+                    <label for="website-suggestion">
+                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion" required> Website Suggestion
+                    </label>
+                </div>
+              </div>  
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+              <!-- Newsletter Subscription Checkbox -->
+                <div class="form-item">
+                    <label for="newsletter">
+                      <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+              <!-- Submit Button -->
+                <div class="form-item">
+                    <button type="submit">Send Your Message</button>
+                </div>
             </form>
           </section>
           
