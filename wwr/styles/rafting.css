@@ -298,7 +298,7 @@ footer nav a img {
     left: 20px;
     background-color: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
     color: var(--light-color);
-    padding: 100px;
+    padding: 40px;
     width: 100%;
     max-width: 700px;
     border-radius: 8px;
