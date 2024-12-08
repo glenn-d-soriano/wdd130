@@ -122,6 +122,9 @@ p {
     margin-bottom: 20px;
 }
 
+a {
+    color: black;
+}
 /* Styling for the images in the content */
 img {
     max-width: 100%;
@@ -579,7 +582,3 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
-
-
- 
-  
