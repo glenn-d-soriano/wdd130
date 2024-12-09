@@ -569,7 +569,7 @@ input[type="checkbox"] {
 }
 
 .radio-options {
-    list-style-type: disc;
+    list-style-type: none;
     padding-left: 20px;
 }
 
