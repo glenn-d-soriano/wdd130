@@ -593,3 +593,81 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background: #78888c;
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter form label {
+    margin: 10px 0 5px;
+  }
+  
+  .newsletter form input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter form button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .newsletter form button:hover {
+    background: #007BFF;
+  }
+  
+  /* Call to Action Section */
+  .call-to-action {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .call-to-action .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #332d2dc7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .call-to-action .cta-button:hover {
+    background: #007BFF;
+  }
+  
+  /* Grid Section */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+  }
+  
