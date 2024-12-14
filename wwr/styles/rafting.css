@@ -79,6 +79,7 @@ nav ul li a:hover {
 
 /* Style for the logo image */
 header .logo img {
+    
     height: 40px; /* Adjust height as needed */
     width: auto; /* Maintain aspect ratio */
 }
@@ -337,6 +338,7 @@ footer nav a img {
 }
 
 .image-gallery img {
+    
     max-width: 200px;
     border-radius: 8px;
 }
@@ -636,46 +638,71 @@ button[type="submit"]:hover {
   .grid-item p {
     margin-top: 10px;
   }
-/* Example of a flexible layout for the Trips page */
-.trips {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+  /* Add smooth transitions for images */
+.trip img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for images */
+  .trip:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Add hover effect on trip boxes */
+  .trip:hover {
+    border-color: #2E8B57; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Grid Layout */
+  .trips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
   
-  .trip {
-    width: 30%;
-    text-align: center;
-    border: 1px solid #78888c;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .trip img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+  /* Make CTA section stand out more */
   .cta {
-    background-color: #78888c;
-    padding: 20px;
-    text-align: center;
+    background-color: #78888c; /* A more vibrant green */
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
     margin-bottom: 30px;
+    font-size: 1.2rem;
   }
   
+  .cta a {
+    color: #def6fa;
+    text-decoration: underline;
+  }
+  
+  .cta a:hover {
+    color: #007BFF;
+  }
+  
+  /* Table Style Improvements */
   .trip-info table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 30px;
+    background-color: #f8f8f8;
   }
   
   .trip-info th, .trip-info td {
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
   }
+  
+  /* Add responsive table styles */
+  @media (max-width: 768px) {
+    .trip-info th, .trip-info td {
+      padding: 10px;
+    }
+  }
+  
+
   
   
   
