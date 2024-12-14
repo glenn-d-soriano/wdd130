@@ -206,11 +206,6 @@ img {
         margin-bottom: 20px;  /* Add space between paragraphs */
     }
 
-    .history-content img {
-        width: 100%;  /* Make the image responsive */
-        max-width: 300px;  /* Limit the image size */
-        margin-bottom: 20px;  /* Add margin to separate from paragraphs */
-    }
 }
 
 /* Style for the footer */
@@ -465,20 +460,7 @@ nav ul li a:hover {
     margin-bottom: 1rem;
   }
   
-  label {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
   
-  input, textarea {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
   
   button {
     background-color: #000000;
@@ -522,19 +504,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Styling the form */
-.contact-form {
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.form-item {
-    margin-bottom: 1rem;
-}
 label {
     font-weight: bold;
     margin-bottom: 0.5rem;
@@ -553,10 +522,7 @@ textarea {
 
 textarea {
     resize: vertical;
-}
 
-textarea {
-    resize: vertical;
 
 }
 
