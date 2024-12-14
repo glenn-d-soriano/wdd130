@@ -703,6 +703,83 @@ button[type="submit"]:hover {
   }
   
 
+  img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for all images */
+img:hover {
+    transform: scale(1.05);  /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for images on hover */
+}
+
+/* Hover effect for boxes (history, adventure, trip) */
+.history:hover,
+.adventure:hover,
+.trip:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  /* Slight shadow on hover */
+    transform: translateY(-5px);  /* Lift effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Additional hover effect for .trip (specific section) */
+.trip:hover {
+    border-color: #2E8B57;  /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for .cta (Call to Action box) */
+.cta:hover {
+    background-color: #5b7b8f; /* Darker background on hover */
+    transform: translateY(-5px);  /* Lift effect */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover effect for navigation links */
+nav ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Optional underline animation on hover for navigation links */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--link-hover-color);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hover effect for social media links */
+.sociallinks a:hover img {
+    opacity: 0.7; /* Slight transparency on hover */
+    transform: scale(1.1);  /* Slight zoom effect */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Change color */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+
+
   
   
   
