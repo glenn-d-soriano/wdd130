@@ -769,14 +769,20 @@ nav ul li a:hover::after {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect for buttons */
-button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Style for View Wireframe link */
+.wireframe-link {
+    color: #080707; /* Tomato color */
+    font-weight: bold; /* Makes the link bold */
+    text-decoration: none; /* Removes the underline */
+    padding: 5px 10px; /* Adds some padding around the link */
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
-button:hover {
-    background-color: #0056b3; /* Change color */
-    transform: scale(1.05);  /* Slight zoom effect */
+.wireframe-link:hover {
+    color: #007BFF; /* Text turns white on hover */
+    background-color: #333333; /* Darker background on hover */
 }
 
 
